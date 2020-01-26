@@ -3,9 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "add": "^2.0.6",
+    "antd": "^3.26.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
+    "react-google-recaptcha": "^2.0.1",
+    "react-hook-form": "^4.7.1",
+    "react-icons": "^3.8.0",
+    "react-scripts": "^3.3.0",
+    "react-scroll": "^1.7.14",
+    "react-spinners": "^0.8.0",
+    "yarn": "^1.21.1"
   },
   "scripts": {
     "start": "react-scripts start",
