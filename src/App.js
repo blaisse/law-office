@@ -32,6 +32,9 @@ const offers = [
   'Stała obsługa prawna'
 ]
 
+const { GOOGLE_API_KEY } = process.env
+console.log('GOOGLE_API_KEY', GOOGLE_API_KEY)
+
 class App extends Component {
   componentDidMount() {
     const scrollToTop = document.querySelector('.scroll-to-top')

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { HashLoader } from 'react-spinners'
 import ReCAPTCHA from "react-google-recaptcha"
-
+import $ from 'jquery'
 
 const id = '12c42a9666bdeeeee574237295d8c98a'
 
@@ -23,21 +23,43 @@ const ContactForm = () => {
             setAPIError(false)
             setSuccess(false)
 
-            const response = await fetch(`https://formsubmit.co/ajax/${id}`, { 
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json;charset=utf-8'
-                },
-                body: JSON.stringify(values)
-                }).then(res => res.json())
+            // const response = await fetch(`https://formsubmit.co/ajax/${id}`, { 
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json;charset=utf-8'
+            //     },
+            //     body: JSON.stringify(values)
+            //     }).then(res => res.json())
 
-            if (response.success) {
-                setSendingEmail(false)
-                setSuccess(true)
-            } else {
-                setSendingEmail(false)
-                setAPIError(true)
-            }
+            $.ajax({
+                url: `https://formsubmit.co/ajax/${id}`,
+                method: 'POST',
+                data: values
+            })
+            .then(res => JSON.parse(res))
+            .done(response => {
+                if (response.success) {
+                    setSendingEmail(false)
+                    setSuccess(true)
+                } else {
+                    setSendingEmail(false)
+                    setAPIError(true)
+                }
+            })
+
+            // const r = await axios.post(`https://formsubmit.co/ajax/${id}`, {
+            //     message: 'test message'
+            // })
+            // console.log('r', r)
+            //     console.log('response', response)
+
+            // if (response.success) {
+            //     setSendingEmail(false)
+            //     setSuccess(true)
+            // } else {
+            //     setSendingEmail(false)
+            //     setAPIError(true)
+            // }
         
         } catch (e) {
             setSendingEmail(false)
