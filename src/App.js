@@ -30,8 +30,6 @@ const offers = [
   'Stała obsługa prawna'
 ]
 
-const { REACT_APP_GOOGLE_API_KEY } = process.env
-console.log('GOOGLE_API_KEY', REACT_APP_GOOGLE_API_KEY)
 
 class App extends Component {
   componentDidMount() {
@@ -248,12 +246,10 @@ class App extends Component {
                     <iframe
                       title='office-map'
                       width="100%"
-                      // height="100%"
                       frameBorder="0"
                       className='google-map'
-                      // style={{ border: 0, height: '100%' }}
-                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBxiSCZRnaGfmFy3c0BjmpYxtBZzWlHrYI
-                        &q=Plac+Brama+Portowa+4,+71-899+Szczecin" allowFullScreen>
+                      src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_API_KEY}
+                        &q=Plac+Brama+Portowa+4,+71-899+Szczecin`} allowFullScreen>
                     </iframe>
                   </div>
             </div>
