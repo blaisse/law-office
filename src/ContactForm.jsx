@@ -34,7 +34,10 @@ const ContactForm = () => {
             $.ajax({
                 url: `https://formsubmit.co/ajax/${process.env.REACT_APP_EMAIL_ALIAS || id}`,
                 method: 'POST',
-                data: values
+                data: {
+                    ...values,
+                    _subject: `Wiadomość ze strony od ${values.email}`
+                }
             })
             .then(res => JSON.parse(res))
             .done(response => {
