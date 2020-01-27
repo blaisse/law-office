@@ -32,7 +32,7 @@ const ContactForm = () => {
             //     }).then(res => res.json())
 
             $.ajax({
-                url: `https://formsubmit.co/ajax/${id}`,
+                url: `https://formsubmit.co/ajax/${process.env.REACT_APP_EMAIL_ALIAS || id}`,
                 method: 'POST',
                 data: values
             })
