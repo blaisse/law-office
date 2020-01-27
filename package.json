@@ -2,7 +2,7 @@
   "name": "law-office",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://blaisse.github.io/law-office/",
+  "homepage": "adwokat-gziut.pl",
   "dependencies": {
     "add": "^2.0.6",
     "jquery": "^3.4.1",
