@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
-// import logo from './AG-logo-659x200px-20191129.jpg'
 import logo_transparent from './AG-logo-659x200px-20191129-transparent.png'
 import szczecin from './szczecin.jpg'
 import logo_vertical from './AG-logo-1000x667px-20191129.png'
@@ -32,8 +30,8 @@ const offers = [
   'Stała obsługa prawna'
 ]
 
-const { GOOGLE_API_KEY } = process.env
-console.log('GOOGLE_API_KEY', GOOGLE_API_KEY)
+const { REACT_APP_GOOGLE_API_KEY } = process.env
+console.log('GOOGLE_API_KEY', REACT_APP_GOOGLE_API_KEY)
 
 class App extends Component {
   componentDidMount() {
