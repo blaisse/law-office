@@ -2,7 +2,7 @@
   "name": "law-office",
   "version": "0.1.0",
   "private": true,
-  "homepage": "adwokat-gziut.pl",
+  "homepage": "https://adwokat-gziut.pl",
   "dependencies": {
     "add": "^2.0.6",
     "jquery": "^3.4.1",
