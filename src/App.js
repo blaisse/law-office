@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo_transparent from './AG-logo-659x200px-20191129-transparent.png'
-import szczecin from './szczecin.jpg'
 import person_1 from './carousel/IMG_2829.jpg';
 import person_2 from './carousel/Kancelaria - małe-11.jpg'
 import office_book from './carousel/Kancelaria - małe-18.jpg'
