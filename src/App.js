@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import logo_transparent from './AG-logo-659x200px-20191129-transparent.png'
 import szczecin from './szczecin.jpg'
+import person_1 from './carousel/IMG_2829.jpg';
+import person_2 from './carousel/Kancelaria - małe-11.jpg'
+import office_book from './carousel/Kancelaria - małe-18.jpg'
+import office_person from './carousel/Kancelaria - małe-1.jpg'
+import table from './carousel/Kancelaria - małe-14.jpg'
+import office from './carousel/Kancelaria - małe-20.jpg'
 import logo_vertical from './AG-logo-1000x667px-20191129.png'
 import { IoMdMenu, IoMdClose } from 'react-icons/io'
 import './App.css';
 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel'
 import { Link, animateScroll as scroll, scroller } from 'react-scroll'
 import ContactForm from './ContactForm';
 
@@ -172,7 +180,24 @@ class App extends Component {
                   </div>
                 </div>
               </div>
-              <img className='welcome-image' src={szczecin} alt='Szczecin' />
+              <Carousel
+                showArrows={true}
+                showThumbs={false}
+                showStatus={false}
+                showIndicators={false}
+                infiniteLoop={true}
+                autoPlay={true}
+                interval={3000}
+              >
+                <img className='welcome-image' src={office_person} alt='Szczecin' />
+                <img className='welcome-image' src={person_1} alt='Szczecin' />
+                <img className='welcome-image' src={office} alt='Szczecin' />
+                {/* <img className='welcome-image' src={szczecin} alt='Szczecin' /> */}
+                <img className='welcome-image' src={table} alt='Szczecin' />
+                <img className='welcome-image' src={person_2} alt='Szczecin' />
+                <img className='welcome-image' src={office_book} alt='Szczecin' />
+              </Carousel>
+              {/* <img className='welcome-image' src={szczecin} alt='Szczecin' /> */}
               {/* <button onClick={this.scrollTo('contact')} className='contact-button'>Kontakt</button> */}
               <div className='scroll-down' onClick={this.scrollTo('offer')}><span></span></div>
             </div>
