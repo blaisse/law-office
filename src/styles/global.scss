@@ -1,0 +1,27 @@
+* {
+  --header-height: 90px;
+  --logo-font-color: #bb9a57;
+  /* --header-bg: #044e37; */
+  --header-bg: #fff;
+  /* --header-additional: #e8e8e8; */
+  --header-additional: #bb9a57;
+  --secondary-font: #e8e8e8;
+}
+
+section {
+  min-height: calc(100vh - var(--header-height));
+  width: 100%;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+@media (max-width: 1210px) {
+  .mobile-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+}

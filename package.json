@@ -1,46 +1,64 @@
 {
-  "name": "law-office",
-  "version": "0.1.0",
+  "name": "gatsby-starter-wordpress-blog",
   "private": true,
-  "homepage": "https://adwokat-gziut.pl",
+  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "version": "1.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com> and Tyler Barnes <tylerdbarnes@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
   "dependencies": {
-    "add": "^2.0.6",
-    "jquery": "^3.4.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-google-recaptcha": "^2.0.1",
-    "react-hook-form": "^4.7.1",
-    "react-icons": "^3.8.0",
-    "react-responsive-carousel": "^3.2.10",
-    "react-scripts": "^3.3.0",
-    "react-scroll": "^1.7.14",
-    "react-spinners": "^0.8.0",
-    "yarn": "^1.21.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@wordpress/block-library": "^2.27.0",
+    "gatsby": "^2.30.1",
+    "gatsby-image": "^2.9.0",
+    "gatsby-plugin-anchor-links": "^1.2.1",
+    "gatsby-plugin-manifest": "^2.10.0",
+    "gatsby-plugin-offline": "^3.8.0",
+    "gatsby-plugin-react-helmet": "^3.8.0",
+    "gatsby-plugin-sass": "^3.2.0",
+    "gatsby-plugin-sharp": "^2.12.0",
+    "gatsby-source-filesystem": "^2.9.0",
+    "gatsby-source-wordpress": "^4.0.0",
+    "gatsby-transformer-sharp": "^2.9.0",
+    "html-react-parser": "^1.1.1",
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.20",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-google-recaptcha": "^2.1.0",
+    "react-helmet": "^5.2.1",
+    "react-hook-form": "^6.15.4",
+    "react-icons": "^4.2.0",
+    "react-responsive-carousel": "^3.2.12",
+    "react-scroll": "^1.8.1",
+    "react-spinners": "^0.10.6",
+    "sass": "^1.32.8",
+    "typeface-merriweather": "1.1.13",
+    "typeface-montserrat": "1.1.13"
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "dumper.js": "^1.3.1",
+    "prettier": "2.2.1"
+  },
+  "homepage": "https://adwokat-gziut.pl",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
