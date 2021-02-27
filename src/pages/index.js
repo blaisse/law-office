@@ -1,7 +1,6 @@
 import React from "react"
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { scrollToTop } from '../utils/navigation';
 
 import Header from '../components/header/header';
 import MobileMenu from '../components/header/mobile_menu';
@@ -10,7 +9,7 @@ import Offer from '../components/sections/offer/Offer';
 import Welcome from '../components/sections/welcome/Welcome';
 import Contact from '../components/sections/contact/Contact';
 
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Articles from '../components/sections/articles/Articles';
 import LandingPageLinks from '../components/header/LandingPageLinks';
 
@@ -28,7 +27,7 @@ const Layout = ({ data }) => {
       <Articles articles={data.allWpPost.nodes} />
       <Contact />
 
-      <div className='scroll-to-top scroll-to-top-invisible' onClick={scrollToTop}><span></span></div>
+      {/* <div className='scroll-to-top scroll-to-top-invisible' onClick={scrollToTop}><span></span></div> */}
     </div>
   )
 }

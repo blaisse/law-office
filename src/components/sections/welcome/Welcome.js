@@ -41,7 +41,13 @@ const Welcome = () => {
           <img className='welcome-image' src={person_2} alt='Agnieszka Gziut adwokat, Szczecin' />
           <img className='welcome-image' src={office_book} alt='Agnieszka Gziut adwokat, Szczecin' />
         </Carousel>
-        <div className='scroll-down' onClick={scrollTo('offer')}><span></span></div>
+        <div
+          className='scroll-down'
+          aria-label='Move to another page'
+          onClick={scrollTo('offer')}
+        >
+          <span></span>
+        </div>
       </div>
     </section>
   );

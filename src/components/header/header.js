@@ -8,7 +8,10 @@ const Header = ({ Links }) => {
   return (
     <div className='header'>
       <div className='header-logo'>
-        <img 
+        <img
+          role='button'
+          tabIndex={0}
+          aria-label='Scroll to top of the page'
           src={logo_transparent}
           onClick={scrollToTop}
           alt='Adwokat Agnieszka Gziut logo'

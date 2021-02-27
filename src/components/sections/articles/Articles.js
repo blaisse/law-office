@@ -11,7 +11,7 @@ const Articles = ({ articles }) => {
         <h2 className='section-header'>Blog</h2>
 
         <div className='info-container'>
-          {articles.map(article => <Article article={article} />)}
+          {articles.map(article => <Article key={article.uri} article={article} />)}
         </div>
         <div className='articles-blog'>
           <Link to='/blog'>

@@ -1,0 +1,33 @@
+name: Node CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install, build, and test
+      run: |
+        echo GATSBY_GOOGLE_API_KEY="${{ secrets.GOOGLE_API_KEY }}" > .env
+        echo GATSBY_EMAIL_ALIAS="${{ secrets.EMAIL_ALIAS }}" > .env
+        git config --global user.email ${{ secrets.EMAIL }}
+        git config --global user.name blaisse
+        git remote set-url origin https://${{ secrets.ACCESS_TOKEN }}@github.com/blaisse/law-office.git
+        npm run deploy
+      env:
+        CI: true
+        GATSBY_GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
