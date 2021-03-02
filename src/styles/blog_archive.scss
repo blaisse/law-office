@@ -1,0 +1,18 @@
+.blog-archive {
+  // display: flex;
+  // justify-content: center;
+  // position: relative;
+  // background-color: #f7f7f7;
+  &-pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    
+    a {
+      color: var(--header-additional);
+      text-decoration: none;
+      font-family: 'Merriweather', serif;
+      line-height: 150%;
+    }
+  }
+}

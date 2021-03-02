@@ -1,0 +1,125 @@
+.contact-button {
+  /* position: absolute;
+  bottom: 100px; */
+  outline: 0;
+  padding: 16px;
+  margin-top: 15px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: 1px solid #fff;
+  color: var(--logo-font-color);
+  font-size: 15px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  /* background-color: black; */
+  transform: translateY(-0.10em);
+  /* transform: scale(1.1) */
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+.contact-form {
+  /* background-color: tomato; */
+  /* border: 1px solid lightblue; */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+  min-width: 250px;
+}
+
+.contact-form-container {
+  display: flex;
+  flex: 1;
+  /* justify-content: space-between; */
+}
+
+.contact-form button {
+  padding: 16px;
+  background-color: var(--logo-font-color);
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+  outline: none;
+}
+
+.contact-form button:hover {
+  background-color: #c4a66c;
+}
+
+.contact-form-input {
+  border: 1px solid black;
+  margin: 16px;
+  padding: 16px;
+  outline: none;
+}
+
+.form-error-message {
+  display: flex;
+  justify-content: flex-end;
+  color: lightcoral;
+  text-align: center;
+}
+
+.success-message {
+  color: #7fd470;
+  text-align: center;
+}
+
+.error-message {
+  color: lightcoral;
+  text-align: center;
+}
+
+.contact-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 150%;
+  color: #4d4d4d;
+  text-align: center;
+}
+
+.google-map {
+  border: 0;
+  height: 100%;
+}
+
+@media (max-width: 1210px) {
+  .contact {
+    background-color: #fff;
+    padding-bottom: 16px;
+  }
+
+  .contact-button {
+    color: #fff;
+    background-color: var(--logo-font-color);
+    margin-bottom: 40px;
+  }
+
+  .contact-form-container {
+    flex-direction: column;
+  }
+
+  .contact-data {
+    margin-bottom: 35px;
+  }
+
+  .google-map {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+}
+

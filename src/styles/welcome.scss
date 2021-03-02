@@ -1,0 +1,90 @@
+.welcome {
+  background-color: #000;
+  position: relative;
+  /* background-image: url('./szczecin.jpg');
+  background-size: 100% 100%; */
+}
+
+.welcome-container {
+  position: relative;
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.welcome-image {
+  max-height: calc(100vh - var(--header-height));
+  width: 100%;
+  object-fit: cover;
+  opacity: .4;
+}
+
+.welcome-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-text-container-header {
+  font-size: 50px;
+}
+
+.welcome-text-container-subheader {
+  font-size: 35px;
+}
+
+.welcome-logo {
+  height: 300px;
+  /* margin-bottom: 20px; */
+}
+
+.welcome-text {
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #fff; */
+  padding: 16px;
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  /* margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0; */
+  max-height: 400px;
+  width: 600px;
+}
+
+@media (max-width: 1210px) {
+  .welcome {
+    background-color: #fff;
+  }
+  .welcome-logo {
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .welcome-image {
+    display: none;
+    opacity: 1;
+  }
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    position: static;
+  }
+
+  .welcome-text {
+    width: auto;
+    padding: 0;
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+  }
+}
