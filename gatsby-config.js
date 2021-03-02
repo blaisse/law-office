@@ -1,5 +1,3 @@
-console.log('PROD?', process.env.NODE_ENV)
-
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
@@ -33,7 +31,7 @@ module.exports = {
       options: {
         // the only required plugin option for WordPress is the GraphQL url.
         url:
-          process.env.WPGRAPHQL_URL ||
+          process.env.GATSBY_WPGRAPHQL_URL ||
           // `https://wpgatsbydemo.wpengine.com/graphql`,
           `http://192.168.64.2/graphql`,
       },
