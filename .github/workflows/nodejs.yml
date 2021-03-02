@@ -23,9 +23,9 @@ jobs:
         deploy-branch: gh-pages
     - name: npm install, build, and test
       run: |
-        echo GATSBY_GOOGLE_API_KEY="${{ secrets.GOOGLE_API_KEY }}" > .env
-        echo GATSBY_EMAIL_ALIAS="${{ secrets.EMAIL_ALIAS }}" > .env
-        echo WPGRAPHQL_URL="${{ secrets.WPGRAPHQL_URL }}" > .env
+        echo GATSBY_GOOGLE_API_KEY="${{ secrets.GOOGLE_API_KEY }}" > .env.production
+        echo GATSBY_EMAIL_ALIAS="${{ secrets.EMAIL_ALIAS }}" > .env.production
+        echo WPGRAPHQL_URL="${{ secrets.WPGRAPHQL_URL }}" > .env.production
         git config --global user.email ${{ secrets.EMAIL }}
         git config --global user.name blaisse
         git remote set-url origin https://${{ secrets.ACCESS_TOKEN }}@github.com/blaisse/law-office.git
