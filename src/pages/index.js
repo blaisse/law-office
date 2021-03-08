@@ -19,7 +19,7 @@ import SEO from '../components/seo';
 const Layout = ({ data }) => {
   return (
     <div>
-      <SEO title="Adwokat Agnieszka Gziut | Kancelaria prawna Szczecin" />
+      <SEO />
       <MobileMenu />        
       <Header Links={LandingPageLinks} />
 
@@ -28,7 +28,6 @@ const Layout = ({ data }) => {
       <Info />
       <Articles articles={data.allWpPost.nodes} />
       <Contact />
-
       {/* <div className='scroll-to-top scroll-to-top-invisible' onClick={scrollToTop}><span></span></div> */}
     </div>
   )
