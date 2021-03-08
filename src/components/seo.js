@@ -78,9 +78,9 @@ const SEO = ({ description, lang, meta, title }) => {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `pl`,
   meta: [],
-  description: ``,
+  description: `Kancelaria prawna, adwokat Agnieszka Gziut, Szczecin`,
 }
 
 SEO.propTypes = {

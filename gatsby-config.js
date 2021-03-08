@@ -11,6 +11,11 @@ require("dotenv").config({
  */
 
 module.exports = {
+  siteMetadata: {
+    title: 'Adwokat Agnieszka Gziut | Kancelaria prawna',
+    url: 'https://adwokat-gziut.pl',
+    image: '/static/AG-logo-1000x667px-20191129.png'
+  },
   /**
    * Adding plugins to this array adds them to your Gatsby site.
    *

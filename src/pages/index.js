@@ -12,12 +12,14 @@ import Contact from '../components/sections/contact/Contact';
 import { graphql } from "gatsby"
 import Articles from '../components/sections/articles/Articles';
 import LandingPageLinks from '../components/header/LandingPageLinks';
+import SEO from '../components/seo';
 
 
 
 const Layout = ({ data }) => {
   return (
     <div>
+      <SEO title="Adwokat Agnieszka Gziut | Kancelaria prawna Szczecin" />
       <MobileMenu />        
       <Header Links={LandingPageLinks} />
 
