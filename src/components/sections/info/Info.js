@@ -6,7 +6,7 @@ const Info = () => {
   return (
     <section id='info' className='info'>
       <div className='section-container-info'>
-        <h2 className='section-header'>O mnie</h2>
+        <h1 className='section-header'>O mnie</h1>
 
         <div className='info-container'>
           <InfoText text='Jestem absolwentką Wydziału Prawa i Administracji Uniwersytetu Szczecińskiego w Szczecinie. W 2015 r. obroniłam pracę magisterską pt. „odpowiedzialność członków zarządu w spółce z ograniczoną odpowiedzialnością”, pod opieką prof. dr hab. Zbigniewa Kuniewicza. W toku studiów brałam udział w programie Erasmus na Université Montesquieu Bordeaux 4 we Francji.' />

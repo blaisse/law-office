@@ -66,7 +66,7 @@ const Offer = () => {
   return (
     <section id='offer' className='offer'>
       <div className='section-container'>
-        <h2 className='section-header'>Oferta</h2>
+        <h1 className='section-header'>Oferta</h1>
         <Modal
           styles={{
             closeButton: {

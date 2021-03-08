@@ -8,7 +8,7 @@ const Articles = ({ articles }) => {
   return (
     <section id='articles' className='articles'>
       <div className='section-container-info'>
-        <h2 className='section-header'>Blog</h2>
+        <h1 className='section-header'>Blog</h1>
 
        
         <div className='info-container'>

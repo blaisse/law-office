@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section id='contact' className='contact'>
       <div className='section-container-info'>
-        <h2 className='section-header'>Kontakt</h2>
+        <h1 className='section-header'>Kontakt</h1>
             
         <div className='contact-form-container'>
           <div style={{ display: 'flex', flex: .6, flexDirection: 'column' }}>
