@@ -24,11 +24,12 @@
   margin-right: 20px;
 }
 
-.header-additional span, .header-additional-welcome span {
+.header-additional span, .header-additional-welcome span, .header-additional a {
   font-family: 'Merriweather', serif;
   font-weight: 300;
   color: var(--header-additional);
   font-size: 14px;
+  text-decoration: none;
 }
 
 .header-additional-welcome {
