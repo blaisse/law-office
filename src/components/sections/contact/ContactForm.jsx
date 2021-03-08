@@ -70,7 +70,7 @@ const ContactForm = () => {
     
     const onChange = value => {
       value ?
-        clearError(['captcha']) :
+        clearError('captcha') :
         setError('captcha', 'Captcha jest wymagana')
 
       setCaptcha(value)
