@@ -19,7 +19,7 @@ import SEO from '../components/seo';
 const Layout = ({ data }) => {
   return (
     <div>
-      <SEO />
+      <SEO title='Kancelaria prawna' />
       <MobileMenu />        
       <Header Links={LandingPageLinks} />
 
