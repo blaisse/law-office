@@ -20,7 +20,7 @@ const Contact = () => {
                 frameBorder="0"
                 className='google-map'
                 src={`https://www.google.com/maps/embed/v1/place?key=${process.env.GATSBY_GOOGLE_API_KEY}
-                  &q=Plac+Brama+Portowa+4,+71-899+Szczecin`} allowFullScreen>
+                  &q=Kancelaria+Adwokacka+Adwokat+Agnieszka+Gziut`} allowFullScreen>
               </iframe>
             </div>
           </div>
