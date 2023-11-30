@@ -9,7 +9,7 @@ const MobileLogo = () => {
       <Link
         to='/'
       >
-        <img className='welcome-logo' src={logo_vertical} alt='Agnieszka Gziut adwokat' />
+        <img className='welcome-logo' src={logo_vertical} alt='Agnieszka Gziut-Gasztka adwokat' />
       </Link>
     </div>
   )

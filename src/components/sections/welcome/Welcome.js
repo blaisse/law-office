@@ -7,12 +7,12 @@ import { scrollTo } from '../../../utils/navigation';
 // import logo_vertical from '/content/assets/AG-logo-1000x667px-20191129.png'
 import logo_vertical from '/content/assets/AG-logo-header-mobile.png'
 
-import person_1 from '/content/assets/carousel/IMG_2829.jpg';
-import person_2 from '/content/assets/carousel/Kancelaria-male-11.jpg'
-import office_book from '/content/assets/carousel/Kancelaria-male-18.jpg'
-import office_person from '/content/assets/carousel/Kancelaria-male-1.jpg'
-import table from '/content/assets/carousel/Kancelaria-male-14.jpg'
-import office from '/content/assets/carousel/Kancelaria-male-20.jpg'
+// import person_1 from '/content/assets/carousel/IMG_2829.jpg';
+// import person_2 from '/content/assets/carousel/Kancelaria-male-11.jpg'
+// import office_book from '/content/assets/carousel/Kancelaria-male-18.jpg'
+// import office_person from '/content/assets/carousel/Kancelaria-male-1.jpg'
+// import table from '/content/assets/carousel/Kancelaria-male-14.jpg'
+// import office from '/content/assets/carousel/Kancelaria-male-20.jpg'
 
 import main_image from '/content/assets/carousel/updated-images/2LH07879.jpg'
 import main_image1 from '/content/assets/carousel/updated-images/2LH07879-1x.jpg'

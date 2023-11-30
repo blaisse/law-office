@@ -16,7 +16,7 @@ const Header = ({ Links }) => {
           aria-label='Scroll to top of the page'
           src={logo}
           onClick={scrollToTop}
-          alt='Adwokat Agnieszka Gziut logo'
+          alt='Adwokat Agnieszka Gziut-Gasztka logo'
         />
       </div>
       <Menu Links={Links} />
