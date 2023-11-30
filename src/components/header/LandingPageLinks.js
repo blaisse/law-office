@@ -48,7 +48,7 @@ const LandingPageLinks = () => {
         <span>O mnie</span>
       </Link>
 
-      <Link 
+      {/* <Link 
         activeClass='menu-link-active'
         to='articles'
         offset={offset}
@@ -57,7 +57,7 @@ const LandingPageLinks = () => {
         onClick={handleMenuClick}
         className='menu-link'>
         <span>Blog</span>
-      </Link>
+      </Link> */}
 
       <Link 
         activeClass='menu-link-active'

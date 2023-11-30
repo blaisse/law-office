@@ -22,11 +22,11 @@ const SubRouteLinks = () => {
         O mnie
       </Link>
 
-      <Link
+      {/* <Link
         className='menu-link menu-link-active'
         to="/blog">
         Blog
-      </Link>
+      </Link> */}
 
       <Link
         className='menu-link'

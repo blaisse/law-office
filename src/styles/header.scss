@@ -17,9 +17,7 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  /* align-content: flex-end; */
   justify-content: center;
-  /* align-items: center; */
   align-items: flex-end;
   margin-right: 20px;
 }
@@ -82,13 +80,23 @@
     align-items: center;  
     margin-right: 0; 
     text-align: center;
+    line-height: 22px;
   }
 
   .header-additional span, .header-additional-welcome span {
-    margin-bottom: 5px;
+    // margin-bottom: 5px;
   }
 
   .header-additional-welcome {
+    font-family: 'Merriweather', serif;
     display: flex;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 22px;
+
+    & > a {
+      color: var(--logo-font-color);
+    }
   }
 }

@@ -10,7 +10,9 @@
   color: var(--logo-font-color);
   font-size: 15px;
   background-color: #fff;
+  // background-color: var(--header-additional);
   cursor: pointer;
+  font-family: 'Merriweather', serif;
 }
 
 .contact-button:hover {
@@ -33,8 +35,15 @@
   flex: 1;
   flex-direction: column;
   justify-content: center;
-  max-width: 300px;
+  // max-width: 300px;
+  max-width: 600px;
   min-width: 250px;
+}
+
+.contact-form-header {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  margin-top: 48px;
 }
 
 .contact-form-container {
@@ -52,10 +61,12 @@
   cursor: pointer;
   margin-top: 20px;
   outline: none;
+  font-family: 'Merriweather', serif;
 }
 
 .contact-form button:hover {
-  background-color: #c4a66c;
+  // background-color: #c4a66c;
+  background-color: #3e694d;
 }
 
 .contact-form-input {
@@ -63,6 +74,10 @@
   margin: 16px;
   padding: 16px;
   outline: none;
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+
+  // flex: .5;
 }
 
 .form-error-message {
@@ -89,7 +104,17 @@
   align-items: center;
   line-height: 150%;
   color: #4d4d4d;
+  font-family: 'Merriweather', serif;
   text-align: center;
+
+   & > a {
+    color: var(--logo-font-color);
+    // color: #1aa1db;
+
+    &:hover {
+      color: #3e694d;
+    }
+   }
 }
 
 .google-map {
@@ -97,20 +122,46 @@
   height: 100%;
 }
 
+.contant-data-wrapper {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.contact-info {
+  display: flex;
+  max-height: 750px;
+  flex: 1;
+  padding-left: 32px;
+  justify-content: center;
+}
+
 @media (max-width: 1210px) {
   .contact {
     background-color: #fff;
-    padding-bottom: 16px;
+    // padding-bottom: 16px;
+    padding-bottom: 38px;
   }
 
   .contact-button {
     color: #fff;
     background-color: var(--logo-font-color);
     margin-bottom: 40px;
+    border: none;
   }
 
   .contact-form-container {
+    flex-direction: column-reverse;
+  }
+
+  .contact-form {
+    /* background-color: tomato; */
+    /* border: 1px solid lightblue; */
+    display: flex;
+    flex: 1;
     flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    min-width: 250px;
   }
 
   .contact-data {
@@ -120,6 +171,20 @@
   .google-map {
     height: 300px;
     margin-bottom: 20px;
+  }
+
+  .contact-form-header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .contant-data-wrapper {
+    margin: 0;
+  }
+  
+  .contact-info {
+    padding: 0;
+    // margin-top: 32px;
   }
 }
 

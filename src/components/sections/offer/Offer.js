@@ -9,6 +9,9 @@ import AdministrativeLaw from './text/AdministrativeLaw';
 import CivilLaw from './text/CivilLaw';
 import Client from './text/Client';
 import LabourLaw from './text/LabourLaw';
+import image from '/content/assets/carousel/updated-images/2LH07945.jpg'
+import image1 from '/content/assets/carousel/updated-images/2LH07945-1x.jpg'
+import image2 from '/content/assets/carousel/updated-images/2LH07945-2x.jpg'
 
 const offers = [
   {
@@ -65,7 +68,7 @@ const Offer = () => {
 
   return (
     <section id='offer' className='offer'>
-      <div className='section-container'>
+      <div className='section-container-info'>
         <h1 className='section-header'>Oferta</h1>
         <Modal
           styles={{
@@ -84,24 +87,37 @@ const Offer = () => {
         </Modal>
 
         <div className='section-content'>
-          <div className='offer-card-container'>
-            {
-              offers.map(offer => {
-                return (
-                  <div 
-                    className='offer-card'
-                    key={offer.text}
-                    onClick={onOpenModal(offer.component)}
-                  >
-                    <span>{offer.text}</span>
-                  </div>
-                )
-              })
-            }
+          <div className='offer-container'>
+            <div style={{ display: 'flex', flex: 0.5, justifyContent: 'center' }}>
+              <img
+                className='info-image'
+                src={image}
+                srcSet={`${image1} 900w, ${image2} 1800w, ${image} 3600w`}
+                sizes="100vw"
+                alt="Agnieszka Gziut-Gasztka adwokat, Szczecin"
+              />
+            </div>
+            <div className='offer-card-container'>
+              {
+                offers.map(offer => {
+                  return (
+                    <div 
+                      className='offer-card'
+                      key={offer.text}
+                      onClick={onOpenModal(offer.component)}
+                    >
+                      <span>{offer.text}</span>
+                    </div>
+                  )
+                })
+              }
+            </div>
           </div>
         </div>
 
-        <div className='scroll-down' onClick={scrollTo('info')}><span style={{ borderColor: '#000' }}></span></div>
+        <div className='scroll-down' onClick={scrollTo('info')}>
+          <span className='scroll-down-highlight'></span>
+        </div>
       </div>
     </section>
   );

@@ -99,73 +99,66 @@ const ContactForm = () => {
         {error &&
           <p className='error-message'>Nie udało się wysłać wiadomości</p>}
 
-        <input 
-          ref={register({
-              required: true
-          })} 
+        <input
+          {...register('name', { required: true })} 
           className='contact-form-input'
-          style={{ border: errors.name ? '1px solid lightcoral' : null  }}
+          style={{ border: errors?.name ? '1px solid lightcoral' : null  }}
           type="text"
           name="name"
           placeholder='Imię' />
-        {errors.name && <span className='form-error-message'>Pole wymagane</span>}
+        {errors?.name && <span className='form-error-message'>Pole wymagane</span>}
 
         <input 
-          ref={register({
-              required: true
-          })} 
+          {...register('surname', { required: true })} 
           className='contact-form-input'
-          style={{ border: errors.surname ? '1px solid lightcoral' : null  }}
+          style={{ border: errors?.surname ? '1px solid lightcoral' : null  }}
           type="text"
           name="surname"
           placeholder='Nazwisko' />
-        {errors.surname && <span className='form-error-message'>Pole wymagane</span>}
+        {errors?.surname && <span className='form-error-message'>Pole wymagane</span>}
 
         <input 
-          ref={register({
-              required: true,
-              message: 'Pole wymagane',
-              pattern: {
-                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                  message: "Niepoprawny adres email"
-              }
-          })}
+          {...register('email', {
+            required: 'Pole wymagane',
+            pattern: {
+              value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+              message: "Niepoprawny adres email"
+            },
+          })} 
           className='contact-form-input'
-          style={{ border: errors.email ? '1px solid lightcoral' : null  }}
+          style={{ border: errors?.email ? '1px solid lightcoral' : null  }}
           type="email"
           name="email"
           placeholder='Email' />
-        {errors.email && <span className='form-error-message'>{errors.email.message ? errors.email.message : 'Pole wymagane'}</span>}
+        {errors?.email && <span className='form-error-message'>{errors.email?.message ? errors.email.message : 'Pole wymagane'}</span>}
 
         <input 
-          ref={register}
+          {...register('tel')} 
           className='contact-form-input'
           type="tel"
           name="tel"
           placeholder='Numer telefonu (niewymagane)' />
 
         <textarea 
-          ref={register({
-              required: true,
-              minLength: 10
-          })}
+          {...register('message', { required: true, minLength: 10 })} 
           className='contact-form-input'
-          style={{ border: errors.message ? '1px solid lightcoral' : null  }}
+          style={{ border: errors?.message ? '1px solid lightcoral' : null  }}
           name='message'
           rows={10}
           cols={10}
           placeholder='Wiadomość'>
         </textarea>
 
-        {errors.message && 
+        {errors?.message && 
           <span className='form-error-message' style={{ marginBottom: 15 }}>
-              {errors.message.type === 'minLength' ? 'Wiadomość musi zawierać przynajmniej 10 znaków' : 'Pole wymagane'}
+              {errors.message?.type === 'minLength' ? 'Wiadomość musi zawierać przynajmniej 10 znaków' : 'Pole wymagane'}
           </span>}
 
         <ReCAPTCHA
+          style={{ display: 'flex', justifyContent: 'center' }}
           sitekey='6Lfo6tIUAAAAAMunEdyN9b5Ut-cQzfgVWr8hYgZT'
           onChange={onChange} />
-        {errors.captcha &&
+        {errors?.captcha &&
           <p className='form-error-message'>
               Captcha jest wymagana
           </p>}

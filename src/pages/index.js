@@ -9,7 +9,7 @@ import Offer from '../components/sections/offer/Offer';
 import Welcome from '../components/sections/welcome/Welcome';
 import Contact from '../components/sections/contact/Contact';
 
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 import Articles from '../components/sections/articles/Articles';
 import LandingPageLinks from '../components/header/LandingPageLinks';
 import SEO from '../components/seo';
@@ -26,7 +26,7 @@ const Layout = ({ data }) => {
       <Welcome />
       <Offer />
       <Info />
-      <Articles articles={data.allWpPost.nodes} />
+      {/* <Articles articles={data.allWpPost.nodes} /> */}
       <Contact />
       {/* <div className='scroll-to-top scroll-to-top-invisible' onClick={scrollToTop}><span></span></div> */}
     </div>
@@ -35,25 +35,25 @@ const Layout = ({ data }) => {
 
 export default Layout
 
-export const query = graphql`
-  query MyQuery {
-    allWpPost(limit: 3, sort: {fields: date, order: DESC}) {
-      nodes {
-        id
-        title
-        excerpt
-        uri
-        date
-        featuredImage {
-          node {
-            id
-            sourceUrl
-          }
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query MyQuery {
+//     allWpPost(limit: 3, sort: {fields: date, order: DESC}) {
+//       nodes {
+//         id
+//         title
+//         excerpt
+//         uri
+//         date
+//         featuredImage {
+//           node {
+//             id
+//             sourceUrl
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
 {/* <div className="global-wrapper">
 <footer>

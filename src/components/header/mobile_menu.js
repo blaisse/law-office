@@ -18,10 +18,10 @@ const MobileMenu = () => {
   return (
     <>
       <div className='menu-icon' onClick={openMenu}>
-        <IoMdMenu />
+        <IoMdMenu size={45} />
       </div>
       <div className='menu-open-icon' onClick={closeMenu}>
-        <IoMdClose />
+        <IoMdClose size={45} />
       </div>
     </>
   );

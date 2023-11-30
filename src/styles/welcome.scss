@@ -17,7 +17,8 @@
   max-height: calc(100vh - var(--header-height));
   width: 100%;
   object-fit: cover;
-  opacity: .4;
+  object-position: center 25%;
+  // opacity: .4;
 }
 
 .welcome-text-container {
@@ -34,8 +35,13 @@
   font-size: 35px;
 }
 
+.welcome-logo-container {
+  height: 300px;
+}
+
 .welcome-logo {
   height: 300px;
+  display: none;
   /* margin-bottom: 20px; */
 }
 
@@ -64,10 +70,14 @@
   .welcome {
     background-color: #fff;
   }
+  .welcome-logo-container {
+    height: auto;
+  }
   .welcome-logo {
     height: 150px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
+    display: flex;
   }
   .welcome-image {
     display: none;
@@ -86,5 +96,7 @@
     left: auto;
     top: auto;
     transform: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
 }

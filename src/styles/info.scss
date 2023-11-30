@@ -34,6 +34,16 @@
   /* margin-right: 10px; */
 }
 
+.info-wrapper {
+  display: flex;
+}
+
+.info-image {
+  max-width: 400px;
+  object-fit: cover;
+}
+
+
 @media (max-width: 1210px) {
   .info {
     background-color: #fff;
@@ -48,5 +58,13 @@
   }
   .info-p-container {
     margin-bottom: 16px;
+  }
+  .info-image {
+    width: 100%;
+    max-width: 500px;
+  }
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
   }
 }
