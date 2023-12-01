@@ -12,7 +12,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Adwokat Agnieszka Gziut-Gasztka | Kancelaria prawna',
+    title: 'Adwokat Agnieszka Gziut-Gasztka | Kancelaria adwokacka',
     url: 'https://adwokat-gziut.pl',
     image: '/static/AG-logo-1000x667px-20191129.png'
   },

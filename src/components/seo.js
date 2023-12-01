@@ -75,7 +75,7 @@ const SEO = ({ description, lang, meta, title }) => {
 SEO.defaultProps = {
   lang: `pl`,
   meta: [],
-  description: `Kancelaria prawna, adwokat Agnieszka Gziut-Gasztka, Szczecin`,
+  description: `Kancelaria adwokacka, adwokat Agnieszka Gziut-Gasztka, Szczecin`,
 }
 
 SEO.propTypes = {
